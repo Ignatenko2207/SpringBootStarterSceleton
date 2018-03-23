@@ -15,10 +15,17 @@
     <junit.version>4.12</junit.version>
     <spring-boot.version>1.5.9.RELEASE</spring-boot.version>
     <spring-context.version>5.0.2.RELEASE</spring-context.version>
+    <server.version>9.4.8.v20171121</server.version>
   </properties>
 
   <dependencies>
   
+  	<dependency>
+    	<groupId>com.fasterxml.jackson.core</groupId>
+    	<artifactId>jackson-databind</artifactId>
+    	<version>2.9.4</version>
+	</dependency>
+	
   <!-- SPRING-BOOT -->
   	<dependency>
     	<groupId>org.springframework.boot</groupId>
@@ -41,8 +48,8 @@
     	<groupId>org.springframework.boot</groupId>
     	<artifactId>spring-boot-starter-web</artifactId>
     	<version>${spring-boot.version}</version>
-	</dependency>
-  
+    </dependency>
+	 
   <!-- SPRING-CONTEXT -->
   	<dependency>
     	<groupId>org.springframework</groupId>
